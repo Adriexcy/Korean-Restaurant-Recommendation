@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: "Roboto Slab", serif;
+    background-color: #fbe9f5; /* Softer background color */
+    color: #4c1d5a; /* General text color */
+    line-height: 1.6;
+}
+
+header {
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header h1 {
+    margin: 0;
+    color: #4c1d5a; /* Header text color */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #4c1d5a;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #d6217b;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Section Titles */
+section h1 {
+    color: #071829;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    border-bottom: 2px solid #dfb4de; /* Underline for section titles */
+    padding-bottom: 5px;
+}
+
+/* Restaurant Information Section Layout (Flexbox for left-right) */
+#Information .section-content {
+    display: flex; /* Align items horizontally */
+    justify-content: flex-start; /* Align items to the left of the container */
+    gap: 20px; /* Space between the left and right sections */
+}
+
+.info-right {
+    width: 450px; 
+    margin-left: 250px;
+}
+
+.info-right img {
+    width: 125%; 
+    height: 400px; 
+}
+
+/* Left-align the section content */
+.section-content {
+    width: 70%; /* Adjust width for left alignment */
+    margin: 0 auto; /* Center-align the content */
+    padding: 20px;
+    text-align: left; /* Align content to the left */
+    background-color: transparent; /* Remove background color */
+    border: none; /* No border */
+    box-shadow: none; /* No shadow */
+}
+
+.section-content h2 {
+    font-size: 20px;
+    color: #4c1d5a;
+    margin-bottom: 10px;
+}
+
+.section-content p {
+    font-size: 18px;
+    color: #4c1d5a;
+    margin-bottom: 15px;
+}
+
+.section-content a {
+    color: #d6217b;
+    text-decoration: none;
+}
+
+.section-content a:hover {
+    text-decoration: underline;
+}
+
+.ratings {
+    margin-top: 20px;
+    background-color: transparent; /* No background */
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none; /* No shadow */
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #dfb4de;
+}
+
+.rating:last-child {
+    border-bottom: none;
+}
+
+.dish-name {
+    font-weight: bold;
+    font-size: 20px;
+    color: #4c1d5a;
+}
+
+.thumbs {
+    font-size: 22px;
+    color: #3c9a56; /* Green thumbs for approval */
+    transition: transform 0.2s ease;
+}
+
+.thumbs:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: flex-start; /* Left-align photos */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.photo-gallery img {
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    cursor: pointer;
+}
+
+/* Improved layout for the Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#navbar h1 {
+    color: #4c1d5a;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #4c1d5a;
+    font-size: 18px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #d6217b;
+}
+
+/* Keep the same layout for other sections */
+#Recommendation .section-content,
+#Additional .section-content {
+    width: 70%; /* Adjust width for left alignment */
+    margin: 0 auto; /* Center-align the content */
+    padding: 20px;
+    text-align: left; /* Align content to the left */
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.ratings {
+    margin-top: 20px;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #dfb4de;
+}
+
+.rating:last-child {
+    border-bottom: none;
+}

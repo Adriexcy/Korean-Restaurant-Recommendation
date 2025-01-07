@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet');
+p{
+    padding:0;
+    margin:0;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+a{
+    text-decoration:none;
+    color: #28162e;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #d6217b; 
+}
+
+body{
+    font-family: "Fjalla One", sans-serif;
+    background-color: #e4b7d3
+}
+
+#navbar{
+    display:flex;
+    justify-content:space-evenly;
+    background-color: #e4b7d3;
+    padding: 30px 0;
+    align-items: center;
+    margin-bottom:100px;
+    color: rgb(15, 30, 30);
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* Ensures space between the boxes */
+    align-items: stretch; /* Ensures all boxes have the same height */
+    gap: 20px; /* Space between the boxes */
+    padding: 10px;
+    flex-wrap: nowrap; /* Prevents boxes from wrapping to the next line */
+}
+
+#Korean, #Chinese, #Japanese, #Combination {
+    background-color: #d8a0c3;
+    width: 24%; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: rgb(15, 30, 30);
+    text-align: center;
+    font-size: 18px !important;
+    font-weight: normal; 
+    margin: 0; 
+
+    transition: transform 0.2s ease;
+}
+
+#Korean:hover, #Chinese:hover, #Japanese:hover, #Combination:hover{
+    transform: translate(5px,-5px);
+}
+
+.zoom-effect {
+    transform: scale(1.05); /* Slight zoom */
+    transition: transform 0.050s ease; /* Smooth transition */
+}
+
+
+
